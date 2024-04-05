@@ -1,4 +1,6 @@
 # Reachinbox
+DEPLOYMENT LINK
+https://react-reach-in-box.vercel.app/
 ## Feature
 - User can login using google account
 - Switch theme light or dark
@@ -50,5 +52,4 @@ In the event that the reply API link is non-functional, sending replies will be 
 - npm i
 - npm start
 
-## Deployed URL
-react-reach-in-box.vercel.app
+
