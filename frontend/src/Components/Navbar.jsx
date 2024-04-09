@@ -17,15 +17,15 @@ const Navbar = () => {
       dispatch(switchTheme("dark"))
     }
   }
-  const textColor = theme == "dark" ? "text-white" : "text-[#5B5F66]"
-  const bgColor = theme == "dark" ? "bg-[#1F1F1F]" : "bg-white"
-  const borderClr = theme == "dark" ? "border-gray-700" : "border-[#DEDEDE]"
-  const btnBgClr = theme == "dark" ? "bg-gray-800" : "bg-[#DADEE1]"
+  const textColor = theme === "dark" ? "text-white" : "text-[#5B5F66]"
+  const bgColor = theme === "dark" ? "bg-[#1F1F1F]" : "bg-white"
+  const borderClr = theme === "dark" ? "border-gray-700" : "border-[#DEDEDE]"
+  const btnBgClr = theme === "dark" ? "bg-gray-800" : "bg-[#DADEE1]"
   //console.log(theme, bgColor, textColor)
   return (
     <div className={`flex justify-between items-center h-16 w-full ${bgColor} ${textColor} 
     border-b ${borderClr}`}>
-        <h1 className='ml-5 font-bold text-l'>Onebox</h1>
+        <h1 className='ml-5 font-montserrat font-bold text-l'>Onebox</h1>
         <div className='flex items-center justify-center'>
         <button className={`mr-6 flex items-center justify-between ${btnBgClr} border ${borderClr} rounded-full p-1`} onClick={handleTheme}>
       {(theme == "dark") ? (
@@ -44,7 +44,7 @@ const Navbar = () => {
     </button>
             
             <div className='flex justify-center items-center mr-5' >
-            <p>Tim's Workspace</p>
+            <p className=''>Tim's Workspace</p>
             <RiArrowDropDownLine size={25}/>
             </div>
         </div>
