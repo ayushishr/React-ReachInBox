@@ -256,7 +256,7 @@ const MailBox = () => {
             </div>
             <div className={`border absolute top-4 w-full ${borderClr}`}></div>
           </div>
-          <div className="p-5 mt-16 relative cursor-pointer">
+             <div className="p-5 mt-16 relative cursor-pointer">
             <MdReply
               color="white"
               className="absolute top-7 left-12"
