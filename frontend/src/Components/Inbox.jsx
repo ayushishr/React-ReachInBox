@@ -26,9 +26,9 @@ const Inbox = () => {
   };
 
   const theme = useSelector((store) => store.theme);
-  const bgColor = theme == "dark" ? "bg-gray-800" : "bg-[#DFE3E8]";
-  const textColor = theme == "dark" ? "text-white" : "text-black";
-  const borderClr = theme == "dark" ? "border-gray-700" : "border-white"
+  const bgColor = theme === "dark" ? "bg-gray-800" : "bg-[#DFE3E8]";
+  const textColor = theme === "dark" ? "text-white" : "text-black";
+  const borderClr = theme === "dark" ? "border-gray-700" : "border-white"
 
   const totalMail = allMailList.length;
   return (

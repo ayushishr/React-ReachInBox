@@ -131,7 +131,7 @@ const MailBox = () => {
       </div>
       {openEditor && (
         <div
-          className={`text-sm fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-30 z-50`}
+          className={`text-sm fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-30 z-50 mb-1`}
         >
           <div
             className={`rounded-lg w-[850px] h-[70%] mt-48 ml-10 border ${borderClr} ${
@@ -256,6 +256,19 @@ const MailBox = () => {
             </div>
             <div className={`border absolute top-4 w-full ${borderClr}`}></div>
           </div>
+          <div className="p-5 mt-16 relative cursor-pointer">
+            <MdReply
+              color="white"
+              className="absolute top-7 left-12"
+              size={30}
+            />
+            <button
+              onClick={handleReply}
+              className="bg-gradient-to-r from-blue-500 rounded to-blue-800 text-white w-48 py-3 px-6"
+            >
+              Reply
+            </button>
+          </div>
         </>
       ) : (
         <>
@@ -277,6 +290,12 @@ const MailBox = () => {
           </div>
         </>
       )}
+      <div>
+        reply
+      </div>
+
+
+
     </div>
   );
 };

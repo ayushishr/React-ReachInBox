@@ -28,7 +28,7 @@ const Navbar = () => {
         <h1 className='ml-5 font-montserrat font-bold text-l'>Onebox</h1>
         <div className='flex items-center justify-center'>
         <button className={`mr-6 flex items-center justify-between ${btnBgClr} border ${borderClr} rounded-full p-1`} onClick={handleTheme}>
-      {(theme == "dark") ? (
+      {(theme === "dark") ? (
         <>
         <>
         <BsCircleFill className="w-4 h-4 text-white-300 mr-1" />
@@ -44,7 +44,7 @@ const Navbar = () => {
     </button>
             
             <div className='flex justify-center items-center mr-5' >
-            <p className=''>Tim's Workspace</p>
+            <p className='font-montserrat'>Tim's Workspace</p>
             <RiArrowDropDownLine size={25}/>
             </div>
         </div>

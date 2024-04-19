@@ -10,7 +10,7 @@ const GoogleAuth = () => {
       <div className=" flex flex-col py-6 justify-center items-center">
         <h3 className="text-xl pb-4 ">Create a new account</h3>
         {/* my deployed link url */}
-        <Link to={"https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://react-reach-in-box.vercel.app/home"}>
+        <Link to={"https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:3000/home"}>
         <button className="border border-gray-500 py-3 px-20 flex justify-center items-center text-base rounded-md">
           <FcGoogle className="text-2xl" />{" "}
           <span className="ml-2">Sign Up with Google</span>
